@@ -1,0 +1,31 @@
+x = 'hello'
+y = 'welcome to my calculator'
+
+print (x + y)
+
+cont = 'y'
+while cont.lower() == 'y':
+	
+	num1 = int(input('type a number: '))
+	num2 = int(input('type another number: '))
+
+	calc = (input("'select a operator:' '+','-','/','*'"))
+
+	if calc == '+':
+		print (num1," + " ,num2," = ",num1 + num2)
+
+	elif calc == '-':
+		print (num1," - " ,num2," = ",num1 - num2)
+	
+	elif calc == '/':	
+		print(num1," / " ,num2," = ",num1 / num2)
+	
+	elif calc == '*':
+		print(num1," * " ,num2," = ",num1 * num2)
+	
+	else:
+		print ('invalid input')
+			
+	cont = input("continue y/n:")
+	if cont == 'n':
+			break
