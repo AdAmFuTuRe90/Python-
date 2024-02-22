@@ -1,0 +1,21 @@
+exit = 'y'
+while exit.lower() == 'y':
+# ask for cash amount
+  cash = int(input("type an amount: "))
+# interest percentage
+  AER = int(input("AER amount: "))
+# percent of AER
+  percent = AER / 100
+# ask for how many years 
+  years = int(input("how many years: "))
+# ask for the percentage of interest of the cash amount
+  interest = percent * cash
+# interest over years 
+  i_o_y =  interest * years
+# the interest of the years plus the cash amount
+  totammo = i_o_y + cash
+# in future i want to be able to do less then 1 percent.  
+  print(totammo)
+  exit = input("do you want to continue: y/n")
+  if exit.lower() == 'n':
+  	break
